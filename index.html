@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Vault</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        🎵
+
+        <span>Music Vault</span>
+
+    </div>
+
+    <nav>
+
+        <button class="nav-btn active" data-page="home">
+
+            🏠 Home
+
+        </button>
+
+        <button class="nav-btn" data-page="library">
+
+            🎼 Library
+
+        </button>
+
+        <button class="nav-btn" data-page="add">
+
+            ➕ Add Song
+
+        </button>
+
+        <button class="nav-btn" data-page="favorites">
+
+            ❤️ Favorites
+
+        </button>
+
+        <button class="nav-btn" data-page="settings">
+
+            ⚙ Settings
+
+        </button>
+
+    </nav>
+
+</aside>
+
+<!-- Main -->
+
+<div class="main">
+
+<header>
+
+    <div>
+
+        <h1>Music Vault</h1>
+
+        <p>Your personal music archive.</p>
+
+    </div>
+
+    <div class="song-counter">
+
+        <span id="songCount">0 Songs</span>
+
+    </div>
+
+</header>
+
+<!-- HOME -->
+
+<section id="homePage" class="page active-page">
+
+<div class="hero">
+
+<h2>
+
+Discover your collection.
+
+</h2>
+
+<p>
+
+A clean place to organize every song you love.
+
+</p>
+
+</div>
+
+<div id="recentSongs" class="recent-grid">
+
+</div>
+
+</section>
+
+<!-- LIBRARY -->
+
+<section id="libraryPage" class="page">
+
+<div class="toolbar">
+
+<input
+
+type="text"
+
+id="search"
+
+placeholder="Search songs, artists or tags..."
+
+>
+
+<select id="tagFilter">
+
+<option value="All">
+
+All Tags
+
+</option>
+
+</select>
+
+<select id="sort">
+
+<option value="new">
+
+Newest
+
+</option>
+
+<option value="old">
+
+Oldest
+
+</option>
+
+<option value="az">
+
+A-Z
+
+</option>
+
+<option value="za">
+
+Z-A
+
+</option>
+
+</select>
+
+</div>
+
+<div id="songGrid" class="song-grid">
+
+</div>
+
+<div id="emptyState" class="empty">
+
+No songs found.
+
+</div>
+
+</section>
+
+<!-- ADD -->
+
+<section id="addPage" class="page">
+
+<div class="form-card">
+
+<h2>
+
+Add Song
+
+</h2>
+
+<p>
+
+This form will eventually generate JSON for you.
+
+</p>
+
+<input placeholder="Song Title">
+
+<input placeholder="Artist">
+
+<input placeholder="Poster">
+
+<input placeholder="Official YouTube">
+
+<input placeholder="Live Performance">
+
+<input placeholder="Lyrics">
+
+<input placeholder="Tags">
+
+<button>
+
+Generate JSON
+
+</button>
+
+</div>
+
+</section>
+
+<!-- FAVORITES -->
+
+<section id="favoritesPage" class="page">
+
+<h2>
+
+Favorites
+
+</h2>
+
+<p>
+
+Coming soon.
+
+</p>
+
+</section>
+
+<!-- SETTINGS -->
+
+<section id="settingsPage" class="page">
+
+<h2>
+
+Settings
+
+</h2>
+
+<p>
+
+Themes and preferences.
+
+</p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
